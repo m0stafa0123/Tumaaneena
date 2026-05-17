@@ -1,0 +1,17 @@
+{
+  "splash": {
+    "tagline": "YOUR DAILY ISLAMIC COMPANION",
+    "est": "EST. 1446 AH"
+  },
+  "onboarding": {
+    "skip": "Skip",
+    "next": "Next",
+    "start": "Get Started",
+    "page1_title": "Time to Meet Allah",
+    "page1_subtitle": "Get reminded of prayer times with a beautiful adhan that touches hearts",
+    "page2_title": "The Quran in Your Hands",
+    "page2_subtitle": "Read, reflect and listen to beautiful recitations with tafsir and translation",
+    "page3_title": "Your Daily Wird",
+    "page3_subtitle": "Track your worship and make consistency in your spiritual journey easy"
+  }
+}
