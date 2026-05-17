@@ -13,5 +13,13 @@
     "page2_subtitle": "Read, reflect and listen to beautiful recitations with tafsir and translation",
     "page3_title": "Your Daily Wird",
     "page3_subtitle": "Track your worship and make consistency in your spiritual journey easy"
+  },
+  "welcome": {
+    "basmala": "In the name of Allah, the Most Gracious, the Most Merciful",
+    "app_name": "Tumaaneena",
+    "tagline": "A peaceful journey to draw closer to Allah",
+    "sign_up": "Sign Up",
+    "login": "Log In",
+    "guest": "Continue as Guest"
   }
 }
