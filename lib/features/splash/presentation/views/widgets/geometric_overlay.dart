@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tumaaneena/features/splash/presentation/views/widgets/mos.dart';
+import 'package:tumaaneena/features/splash/presentation/views/widgets/Islamic_pattern_painter.dart';
 
 class GeometricOverlay extends StatelessWidget {
   const GeometricOverlay({super.key});
@@ -15,4 +15,3 @@ class GeometricOverlay extends StatelessWidget {
   }
 }
 
-/// Paints a repeating 8-pointed star grid at very low opacity.

@@ -26,7 +26,7 @@ class _SplashBodyState extends State<SplashBody>
     super.initState();
     _controller = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 2000),
+      duration: const Duration(milliseconds: 3400),
     );
 
     // Logo animation: Fade + Scale (0.7 -> 1.0) starting at 0ms
