@@ -144,6 +144,20 @@ class AppColors {
 - Default border radius: 16px
 - Bottom navigation: 5 tabs — Home, Quran, Prayer, Azkar, More
 
+## Widget Splitting Rule (MANDATORY)
+Every screen body must split its UI into separate widget files.
+NEVER put multiple private widget classes (_WidgetName) in one file.
+Each widget gets its own file in the widgets/ folder.
+
+Example for splash:
+- widgets/splash_background.dart
+- widgets/splash_logo.dart
+- widgets/splash_content.dart
+- widgets/splash_bottom_caption.dart
+- widgets/geometric_overlay.dart
+
+This applies to every single screen in the app, no exceptions.
+
 ## Naming Conventions
 - Files: snake_case
 - Classes: PascalCase

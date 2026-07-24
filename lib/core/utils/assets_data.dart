@@ -2,10 +2,10 @@ abstract class AssetsData {
   // ── Base paths ───────────────────────────────────────────────────────────
   static const String _images = 'assets/images/';
   static const String _animations = 'assets/animations/';
-  static const String _icons = 'assets/icons/';
 
-  // ── Images ───────────────────────────────────────────────────────────────
-  static const String appLogo = '${_images}app_logo.png';
+  // ── Images & Icons ───────────────────────────────────────────────────────
+  static const String moonIcon = '${_images}Icon.svg';
+  static const String mosqueIcon = '${_images}mosq_icon.svg';
 
   // ── Onboarding illustrations ─────────────────────────────────────────────
   static const String onboarding1 = '${_images}onboarding_1.png';
@@ -14,7 +14,4 @@ abstract class AssetsData {
 
   // ── Animations ───────────────────────────────────────────────────────────
   static const String splashAnimation = '${_animations}splash_lottie.json';
-
-  // ── Icons ────────────────────────────────────────────────────────────────
-  static const String moonIcon = '${_icons}moon.svg';
 }
