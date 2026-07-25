@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
+import 'package:tumaaneena/features/onboarding/presentation/views/onboarding_view.dart';
 import 'geometric_overlay.dart';
 import 'splash_background.dart';
 import 'splash_bottom_caption.dart';
@@ -65,6 +67,16 @@ class _SplashBodyState extends State<SplashBody>
         curve: const Interval(400 / 1500, 1.0, curve: Curves.easeOut),
       ),
     );
+
+    _controller.addStatusListener((status) {
+      if (status == AnimationStatus.completed) {
+        Future.delayed(const Duration(milliseconds: 300), () {
+          if (mounted) {
+            Get.offAll(() => const OnboardingView());
+          }
+        });
+      }
+    });
 
     _controller.forward();
   }
