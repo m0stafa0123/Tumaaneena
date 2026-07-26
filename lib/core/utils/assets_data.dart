@@ -14,6 +14,11 @@ abstract class AssetsData {
   static const String onboarding1 = '${_images}onboarding_1.png';
   static const String onboarding2 = '${_images}onboarding_2.png';
   static const String onboarding3 = '${_images}onboarding_3.png';
+  static const String tasbeeh = '${_images}Islamic Tasbeeh.svg';
+
+  // ── Welcome illustrations ────────────────────────────────────────────────
+  static const String logo = '${_images}logo.png';
+  static const String backgroundPattern = '${_images}mosque_pattern.png';
 
   // ── Animations ───────────────────────────────────────────────────────────
   static const String splashAnimation = '${_animations}splash_lottie.json';

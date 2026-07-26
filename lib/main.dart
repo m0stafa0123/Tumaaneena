@@ -36,7 +36,7 @@ class TumaaneenaApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+    return GetMaterialApp( 
       title: 'طمأنينة',
       debugShowCheckedModeBanner: false,
 

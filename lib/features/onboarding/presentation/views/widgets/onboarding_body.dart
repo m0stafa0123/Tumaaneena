@@ -5,6 +5,7 @@ import '../../../../../core/utils/assets_data.dart';
 import 'onboarding_dots.dart';
 import 'onboarding_next_button.dart';
 import 'onboarding_page.dart';
+import 'onboarding_page_last.dart';
 
 class OnboardingBody extends StatefulWidget {
   const OnboardingBody({super.key});
@@ -54,38 +55,56 @@ class _OnboardingBodyState extends State<OnboardingBody> {
               iconData: Icons.menu_book_outlined,
               imagePath: AssetsData.quranIcon,
             ),
+            const OnboardingPageLast(),
           ],
         ),
 
-        // ── 2. Bottom overlay: dots + next button ──────────────────────────
-        Positioned(
-          bottom: 36,
-          left: 24,
-          right: 24,
-          child: SafeArea(
-            child: Row(
-              children: [
-                OnboardingNextButton(
-                  onTap: () {
-                    if (_currentIndex < 1) {
-                      _pageController.nextPage(
-                        duration: const Duration(milliseconds: 300),
-                        curve: Curves.easeInOut,
-                      );
-                    }
-                  },
-                ),
-                const Spacer(),
-                OnboardingDots(
-                  currentIndex: _currentIndex,
-                  count: 2,
-                ),
-                const Spacer(),
-                const SizedBox(width: 110),
-              ],
+        // ── 2. Bottom overlay: dots + next button (only on pages 1 & 2) ─────
+        if (_currentIndex < 2)
+          Positioned(
+            bottom: 36,
+            left: 24,
+            right: 24,
+            child: SafeArea(
+              child: Row(
+                children: [
+                  OnboardingNextButton(
+                    onTap: () {
+                      if (_currentIndex < 2) {
+                        _pageController.nextPage(
+                          duration: const Duration(milliseconds: 300),
+                          curve: Curves.easeInOut,
+                        );
+                      }
+                    },
+                  ),
+                  const Spacer(),
+                  OnboardingDots(
+                    currentIndex: _currentIndex,
+                    count: 3,
+                  ),
+                  const Spacer(),
+                  const SizedBox(width: 110),
+                ],
+              ),
             ),
           ),
-        ),
+
+        // ── 3. Page 3 dots (positioned above the start button) ───────────────
+        if (_currentIndex == 2)
+          Positioned(
+            bottom: 96,
+            left: 0,
+            right: 0,
+            child: SafeArea(
+              child: Center(
+                child: OnboardingDots(
+                  currentIndex: _currentIndex,
+                  count: 3,
+                ),
+              ),
+            ),
+          ),
       ],
     );
   }

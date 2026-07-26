@@ -15,11 +15,14 @@
     "page3_subtitle": "Track your worship and make consistency in your spiritual journey easy"
   },
   "welcome": {
+    "title": "Welcome to Tumaaneena",
     "basmala": "In the name of Allah, the Most Gracious, the Most Merciful",
     "app_name": "Tumaaneena",
-    "tagline": "A peaceful journey to draw closer to Allah",
+    "tagline": "A peaceful journey closer to Allah",
     "sign_up": "Sign Up",
     "login": "Log In",
-    "guest": "Continue as Guest"
+    "guest": "Continue as Guest",
+    "next": "Next",
+    "skip": "Skip"
   }
 }
