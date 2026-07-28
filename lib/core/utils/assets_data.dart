@@ -4,11 +4,11 @@ abstract class AssetsData {
   static const String _animations = 'assets/animations/';
 
   // ── Images & Icons ───────────────────────────────────────────────────────
-  static const String moonIcon = '${_images}Icon.svg';
+  static const String moonIcon = '${_images}hilal_icon.svg';
   static const String mosqueIcon = '${_images}mosq_icon.svg';
   static const String mosqueSilhouette =
       '${_images}Mosque Silhouette (Placeholder for illustrative logic).png';
-  static const String quranIcon = '${_images}Icon.png';
+  static const String moshafIcon = '${_images}moshaf_icon.png';
 
   // ── Onboarding illustrations ─────────────────────────────────────────────
   static const String onboarding1 = '${_images}onboarding_1.png';
@@ -23,4 +23,3 @@ abstract class AssetsData {
   // ── Animations ───────────────────────────────────────────────────────────
   static const String splashAnimation = '${_animations}splash_lottie.json';
 }
-

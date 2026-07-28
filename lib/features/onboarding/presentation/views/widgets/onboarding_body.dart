@@ -53,7 +53,7 @@ class _OnboardingBodyState extends State<OnboardingBody> {
               title: 'onboarding.page2_title'.tr(),
               subtitle: 'onboarding.page2_subtitle'.tr(),
               iconData: Icons.menu_book_outlined,
-              imagePath: AssetsData.quranIcon,
+              imagePath: AssetsData.moshafIcon,
             ),
             const OnboardingPageLast(),
           ],
@@ -79,10 +79,7 @@ class _OnboardingBodyState extends State<OnboardingBody> {
                     },
                   ),
                   const Spacer(),
-                  OnboardingDots(
-                    currentIndex: _currentIndex,
-                    count: 3,
-                  ),
+                  OnboardingDots(currentIndex: _currentIndex, count: 3),
                   const Spacer(),
                   const SizedBox(width: 110),
                 ],
@@ -98,10 +95,7 @@ class _OnboardingBodyState extends State<OnboardingBody> {
             right: 0,
             child: SafeArea(
               child: Center(
-                child: OnboardingDots(
-                  currentIndex: _currentIndex,
-                  count: 3,
-                ),
+                child: OnboardingDots(currentIndex: _currentIndex, count: 3),
               ),
             ),
           ),
