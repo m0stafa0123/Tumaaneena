@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import '../views_model/cubit/splash_cubit.dart';
 import 'widgets/splash_body.dart';
 
 class SplashView extends StatelessWidget {
@@ -8,11 +6,6 @@ class SplashView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (_) => SplashCubit(),
-      child: const Scaffold(
-        body: SplashBody(),
-      ),
-    );
+    return const Scaffold(body: SplashBody());
   }
 }
