@@ -24,5 +24,31 @@
     "guest": "متابعة كضيف",
     "next": "التالي",
     "skip": "تخطى"
+  },
+  "auth": {
+    "welcome_back": "مرحباً بعودتك",
+    "login_subtitle": "سجّل دخولك لتكمل رحلتك الروحانية",
+    "sign_up": "إنشاء حساب",
+    "sign_up_subtitle": "بدأ رحلتك الروحانية",
+    "full_name": "الاسم الكامل",
+    "full_name_hint": "أدخل اسمك الكامل",
+    "email": "البريد الإلكتروني",
+    "email_hint": "example@gmail.com",
+    "password": "كلمة المرور",
+    "password_hint": "أدخل كلمة المرور",
+    "confirm_password": "تأكيد كلمة المرور",
+    "confirm_password_hint": "أعد إدخال كلمة المرور",
+    "forgot_password": "نسيت كلمة المرور",
+    "forgot_password_link": "نسيت كلمة المرور؟",
+    "forgot_password_subtitle": "أدخل بريدك الإلكتروني وسنرسل لك رابط الاستعادة",
+    "send_reset": "إرسال الرابط",
+    "check_email": "تحقق من بريدك",
+    "email_sent": "تم إرسال رابط الاستعادة إلى بريدك",
+    "or": "أو",
+    "no_account": "ليس لديك حساب؟",
+    "have_account": "لديك حساب بالفعل؟",
+    "register_now": "إنشاء حساب",
+    "back_to_login": "العودة لتسجيل الدخول",
+    "terms": "بمتابعتك فأنت توافق على الشروط والأحكام وسياسة الخصوصية"
   }
 }

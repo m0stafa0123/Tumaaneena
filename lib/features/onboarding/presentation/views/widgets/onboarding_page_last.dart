@@ -1,10 +1,12 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart' hide Trans;
 import 'package:gap/gap.dart';
 
 import '../../../../../core/constants/app_colors.dart';
 import '../../../../../core/utils/app_text_styles.dart';
 import '../../../../../core/utils/assets_data.dart';
+import '../../../../welcome/presentation/views/welcome_view.dart';
 
 class OnboardingPageLast extends StatelessWidget {
   const OnboardingPageLast({super.key});
@@ -100,7 +102,9 @@ class OnboardingPageLast extends StatelessWidget {
                     width: double.infinity,
                     height: 52,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.to(() => const WelcomeView());
+                      },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: AppColors.primaryAccent,
                         elevation: 0,

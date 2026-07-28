@@ -1,10 +1,12 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart' hide Trans;
 import 'package:gap/gap.dart';
+
 import '../../../../../core/constants/app_colors.dart';
 import '../../../../../core/utils/app_text_styles.dart';
-import 'package:get/get.dart' hide Trans;
-import '../../../../onboarding/presentation/views/onboarding_view.dart';
+import '../../../../auth/presentation/views/login_view.dart';
+import '../../../../auth/presentation/views/sign_up_view.dart';
 
 class WelcomeButtonsSection extends StatelessWidget {
   const WelcomeButtonsSection({super.key});
@@ -19,14 +21,37 @@ class WelcomeButtonsSection extends StatelessWidget {
           height: 52,
           child: ElevatedButton(
             onPressed: () {
-              Get.to(() => const OnboardingView());
+              Get.to(() => const SignUpView());
+            },
+            style: ElevatedButton.styleFrom(
+              backgroundColor: AppColors.primaryAccent,
+              elevation: 0,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(16),
+              ),
+            ),
+            child: Text(
+              'welcome.sign_up'.tr(),
+              style: AppTextStyles.body2Bold.copyWith(
+                color: AppColors.surfaceColor,
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+        ),
+        const Gap(12),
+        SizedBox(
+          width: double.infinity,
+          height: 52,
+          child: ElevatedButton(
+            onPressed: () {
+              Get.to(() => const LoginView());
             },
             style: ElevatedButton.styleFrom(
               backgroundColor: AppColors.primaryAccent,
               elevation: 0,
 
-
-              
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(16),
               ),
@@ -54,7 +79,9 @@ class WelcomeButtonsSection extends StatelessWidget {
         ),
         const Gap(12),
         TextButton(
-          onPressed: () {},
+          onPressed: () {
+            Get.to(() => const LoginView());
+          },
           style: TextButton.styleFrom(
             minimumSize: const Size(double.infinity, 48),
             shape: RoundedRectangleBorder(
