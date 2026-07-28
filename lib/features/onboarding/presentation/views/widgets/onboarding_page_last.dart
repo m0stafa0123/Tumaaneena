@@ -1,6 +1,5 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gap/gap.dart';
 
 import '../../../../../core/constants/app_colors.dart';
@@ -21,10 +20,7 @@ class OnboardingPageLast extends StatelessWidget {
               gradient: RadialGradient(
                 center: Alignment(0.0, -0.2),
                 radius: 0.85,
-                colors: [
-                  AppColors.gradientCenter,
-                  AppColors.backgroundColor,
-                ],
+                colors: [AppColors.gradientCenter, AppColors.backgroundColor],
                 stops: [0.0, 1.0],
               ),
             ),
@@ -60,7 +56,7 @@ class OnboardingPageLast extends StatelessWidget {
                       shape: BoxShape.circle,
                     ),
                     alignment: Alignment.center,
-                    child: SvgPicture.asset(
+                    child: Image.asset(
                       AssetsData.tasbeeh,
                       width: 80,
                       height: 80,
