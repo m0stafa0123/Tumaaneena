@@ -7,6 +7,7 @@ import '../../../../../core/constants/app_colors.dart';
 import '../../../../../core/utils/app_text_styles.dart';
 import '../../../../auth/presentation/views/login_view.dart';
 import '../../../../auth/presentation/views/sign_up_view.dart';
+import '../../../../onboarding/presentation/views/onboarding_view.dart';
 
 class WelcomeButtonsSection extends StatelessWidget {
   const WelcomeButtonsSection({super.key});
@@ -46,7 +47,7 @@ class WelcomeButtonsSection extends StatelessWidget {
           height: 52,
           child: ElevatedButton(
             onPressed: () {
-              Get.to(() => const LoginView());
+              Get.to(() => const OnboardingView());
             },
             style: ElevatedButton.styleFrom(
               backgroundColor: AppColors.primaryAccent,
