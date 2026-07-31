@@ -55,9 +55,9 @@ class TumaaneenaApp extends StatelessWidget {
           error: AppColors.errorColor,
         ),
         useMaterial3: true,
-      ),
-
-      // ── Entry point ───────────────────────────────────────────────────────
+      ), 
+ 
+      // ── Entry point ──────── ───────────────────────────────────────────────
       home: const SplashView(),
     );
   }

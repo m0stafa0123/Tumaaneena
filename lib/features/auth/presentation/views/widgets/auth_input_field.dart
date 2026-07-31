@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/constants/app_colors.dart';
-import '../../../../../core/utils/app_text_styles.dart';
+import '../../../../../core/widgets/app_text_form_field.dart';
 
 class AuthInputField extends StatelessWidget {
   const AuthInputField({
@@ -25,46 +24,14 @@ class AuthInputField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextFormField(
+    return AppTextFormField(
       controller: controller,
+      hintText: hintText,
       validator: validator,
       keyboardType: keyboardType,
       obscureText: obscureText,
-      style: AppTextStyles.body2.copyWith(
-        color: AppColors.textPrimary,
-        fontSize: 14,
-      ),
-      cursorColor: AppColors.primaryAccent,
-      decoration: InputDecoration(
-        hintText: hintText,
-        hintStyle: AppTextStyles.small.copyWith(
-          color: AppColors.textSecondary,
-          fontSize: 14,
-        ),
-        filled: true,
-        fillColor: AppColors.surfaceColor,
-        contentPadding: const EdgeInsets.symmetric(
-          horizontal: 16,
-          vertical: 18,
-        ),
-        prefixIcon: prefixIcon,
-        suffixIcon: suffixIcon,
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide.none,
-        ),
-        enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
-          borderSide: const BorderSide(color: AppColors.surfaceColor, width: 1),
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
-          borderSide: const BorderSide(
-            color: AppColors.primaryAccent,
-            width: 1.5,
-          ),
-        ),
-      ),
+      suffixIcon: suffixIcon,
+      prefixIcon: prefixIcon,
     );
   }
 }
